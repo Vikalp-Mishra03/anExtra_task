@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                    <h1>Health Report</h1>
+                </div>
+                <div class="panel-body">
+                    <form action="connect.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="number" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" class="form-control" id="age" name="age" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="weight">Weight</label>
+                            <input type="number" class="form-control" id="weight" name="weight" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" name="email" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="health_report">Upload Health Report (PDF):</label>
+                            <input type="file" name="health_report" accept=".pdf" required><br>
+                        </div>
+                        <input type="submit" class="btn btn-primary" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
